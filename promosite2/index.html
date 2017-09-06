@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transhumanism</title>
+							<!-- css reference & fonts -->
+	<link rel="stylesheet" type="text/css" href="css/promo2-styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Oswald|Sarpanch:900|Alegreya+Sans+SC:100" rel="stylesheet">
+
+							<!-- jquery cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+				<!-- navbar -->
+<header>
+	<div class="navbar">
+		<div class="logo">
+			<a href="index.html">Transhumanism</a>
+		</div>
+	</div>
+</header>
+
+				<!-- carousel -->
+<div class="slide-container">
+	<a href="page1.html"><img class="slide-images" width="560" height="445" src="images/cyber1.png"></a>
+	<a href="page2.html"><img class="slide-images" width="560" height="445" src="images/nano1.jpg"></a>
+	<a href="page3.html"><img class="slide-images" width="560" height="445" src="images/nano2.jpg"></a>
+</div>
+
+<section>
+	<h1>Transhumanism</h1>
+	<p>the international and intellectual movement that aims to transform the human condition 
+	by developing and making widely available sophisticated technologies to greatly enhance 
+	human intellect and physiology.
+
+	Transhumanist thinkers study the potential benefits and dangers of emerging technologies 
+	that could overcome fundamental human as well as ethical limitations of using such 
+	technologies. The most common transhumanist thesis is that human beings may eventually be
+	able to transform themselves into different beings with abilities so greatly expanded from 
+	the natural condition as to merit the label of posthuman beings.
+
+
+	Transhumanist thinkers study the potential benefits and dangers of emerging technologies 
+	that could overcome fundamental human as well as ethical limitations of using such 
+	technologies. The most common transhumanist thesis is that human beings may eventually be
+	able to transform themselves into different beings with abilities so greatly expanded from 
+	the natural condition as to merit the label of posthuman beings.Transhumanist thinkers study
+	the potential benefits and dangers of emerging technologies 
+	that could overcome fundamental human as well as ethical limitations of using such 
+	technologies. The most common transhumanist thesis is that human beings may eventually be
+	able to transform themselves into different beings with abilities so greatly expanded from 
+	the natural condition as to merit the label of posthuman beings.
+	</p>
+</section>
+
+<script>
+
+//initialize index to 0
+var index = 0;
+
+	//start of carousel function
+	function firstSlide(){
+
+		//initialize i to 0
+		var i = 0;
+
+		//get all elements with the same class and set to a holder
+		var imgs = $(".slide-images");
+
+		//while i is less than the length of imgs
+		while(i < imgs.length){
+
+			//hide rest of images
+			imgs[i].style.display = "none";
+
+			//increment i
+			i++;
+		}
+
+		//increment index
+		index++;
+
+		//if index is less than the length of imgs
+		if (index > imgs.length) 
+		{
+			//set index to 1
+			index = 1;
+		}
+
+		//display image in position
+		imgs[index-1].style.display = "block";
+
+		//make the slideshow move to the next img every second
+	    setTimeout(firstSlide, 2000);
+	}
+
+//call to function
+firstSlide();
+
+$("body").css("display", "none");
+
+$("body").fadeIn(2000);
+
+</script>
+</body>
+</html>

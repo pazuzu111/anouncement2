@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+}
+
+body{
+	background-color: rgba(0,0,0,.75);
+}
+
+span{
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+/*****************  header *****************/
+
+
+.navbar{
+	background-color: black;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Sarpanch', sans-serif;
+	position: fixed;
+}
+
+.navbar a{
+	text-decoration: none;
+
+
+}
+
+/************** TRANSHUMANISM logo ************/
+
+.logo{
+	font-size: 40px;
+	display: inline-block;
+
+
+}
+
+.logo a{
+	color: yellow;
+	font-family: 'Sarpanch', sans-serif;
+
+
+}
+/*********************************************/
+
+/************** pagination left *************/
+
+.left{
+	float: left;
+	font-size: 25px;
+	display: inline-block;
+	font-family: 'Londrina Outline', cursive;
+}
+
+.left a{
+	color:yellow;
+}
+
+.left a:hover{
+	color:black;
+	background-color: yellow;
+}
+/*********************************************/
+
+/************** pagination right ************/
+
+.right{
+	float: right;
+	font-size: 25px;
+	display: inline-block;
+	font-family: 'Londrina Outline', cursive;
+	color: yellow;
+
+
+}
+
+.right a{
+	color: yellow;
+
+}
+
+.right a:hover{
+	color:black;
+	background-color: yellow;
+}
+
+/*********************************************/
+
+/***************** slideshow ****************/
+
+.slide-container{
+	max-width: 960px;
+  	margin: auto;
+  	padding-top: 50px;
+}
+.slide-images{
+	width:100%;
+
+}
+
+/*********************************************/
+
+/***************** info sec *****************/
+
+section{
+	max-width: 100%;
+  	position: absolute;
+  	padding:90px; 
+  	margin: auto;
+  	color: white;
+  	text-align: center;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	background: #000000; 
+	background: -webkit-linear-gradient(to bottom, #434343, #000000); 
+	background: linear-gradient(to bottom, #434343, #000000); 
+	line-height: 45px;
+}
+
+section h1{
+	font-size: 40px;
+}
+
+section p {
+	font-size: 25px;
+}
+
+/*********************************************/
+
+footer{
+	background-color: black;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	bottom:0px;
+}
